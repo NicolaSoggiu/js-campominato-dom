@@ -1,0 +1,57 @@
+/* BODY */
+
+body {
+    height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 10vh;
+} 
+
+.navbar .nvb-container img {
+    width: 40px;
+}
+
+/* CONTAINER */
+
+.container-grid {
+    background-color: #7FFFD4;
+    height: 80vh;
+}
+
+.container-grid .grid {
+    width: 400px;
+    height: 400px;
+}
+
+.container-grid .grid .instructions {
+    padding-top: 8rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( 100% / 10 );
+    height: calc( 100% / 10 );
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.active {
+    background-color: blue;
+}
+
+/* FOOTER */
+
+footer {
+    height: 10vh;
+}
+
+footer a {
+    color: #7748A1;
+}
