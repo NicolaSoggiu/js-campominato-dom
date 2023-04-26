@@ -45,3 +45,21 @@ function createGrid(numCells, eleContainer) {
     });
   }
 }
+
+// CREARE ARRAY VUOTO PER POI INSERIRE LE BOMBE GENERATE DALLA FUNZIONE
+let bomb = [];
+console.log("bomb before cicle", bomb);
+
+// GENERARE 16 NUMERI CHE SARANNO LE BOMBE
+while (bomb.length !== 16) {
+  const bombIndex = generateBomb(1, 100);
+  if (!bomb.includes(bombIndex)) {
+    bomb.push(bombIndex);
+  }
+}
+console.log("bomb", bomb);
+
+// FUNZIONE PER CREARE UN NUMERO RANDOM
+function generateBomb(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
