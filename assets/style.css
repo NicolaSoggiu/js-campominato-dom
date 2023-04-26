@@ -50,6 +50,16 @@ body {
     background-color: red;
 }
 
+/* SCORE */
+
+.score {
+    /* display: none; */
+    margin-top: 29rem;
+    position: relative;
+    right: 250px;
+    
+}
+
 /* FOOTER */
 
 footer {
@@ -60,10 +70,3 @@ footer a {
     color: #7748A1;
 }
 
-.score {
-    /* display: none; */
-    margin-top: 29rem;
-    position: relative;
-    right: 250px;
-    
-}

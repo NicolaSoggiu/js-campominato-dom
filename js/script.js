@@ -69,16 +69,25 @@ function createGrid(numCells, eleContainer) {
         cell.classList.toggle("bomb");
         gameOver = false;
         console.log("Game Over");
+        activateAllBombs();
       } else {
         score++;
         document.getElementById("score").innerHTML =
-          "Il tuo punteggio è : " + score;
-
+          "Il tuo punteggio è : " + " " + score;
         console.log("score", score);
       }
     });
   }
 }
+// FUNCTION TO ACTIVE ALL THE BOMBS WHEN THE PLAYER CLICK A BOMB
+// TO FIX
+// function activateAllBombs() {
+//   let bombs = document.querySelectorAll(".bomb");
+//   bombs.forEach((bomb) => {
+//     bomb.classList.add("bomb");
+//   });
+//   console.log("activateAllBombs", activateAllBombs);
+// }
 
 // fUNCTION TO CREATE A RANDOM NUMBER
 function generateBomb(min, max) {
